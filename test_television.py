@@ -30,27 +30,7 @@ class MyTestCase(unittest.TestCase):
 
 
     def test_channel_up(self):
-        with self.assertRaises(ValueError):
-            triangle('s', 'y')
-            triangle('s', 5)
-            triangle(4, 'y')
-            triangle(4, '*')
-            triangle('^', 's')
-
-        with self.assertRaises(TypeError):
-            triangle(-1, -2)
-            triangle(-1, 2)
-            triangle(1, -2)
-            triangle(0, 0)
-            triangle(0, 1)
-            triangle(3, 0)
-            triangle(0, -2)
-            triangle(-1, 0)
-
-        self.assertAlmostEqual(triangle(2, 3), 3.0, delta=0.001)
-        self.assertAlmostEqual(triangle(3.4, 2.1), 3.57, delta=0.001)
-        self.assertAlmostEqual(triangle(3.4, 2), 3.4, delta=0.001)
-        self.assertAlmostEqual(triangle(2, 3.4), 3.4, delta=0.001)
+        pass
     def test_channel_down(self):
         pass
     def test_volume_up(self):
